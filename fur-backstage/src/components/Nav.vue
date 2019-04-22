@@ -24,18 +24,12 @@
             </el-submenu>
             <el-submenu index="3">
                 <template slot="title"><i class="el-icon-tickets"></i>订单管理</template>
-                <el-menu-item-group>
-                <template slot="title">分组一</template>
-                <el-menu-item index="3-1">选项1</el-menu-item>
-                <el-menu-item index="3-2">选项2</el-menu-item>
-                </el-menu-item-group>
-                <el-menu-item-group title="分组2">
-                <el-menu-item index="3-3">选项3</el-menu-item>
-                </el-menu-item-group>
-                <el-submenu index="3-4">
-                <template slot="title">选项4</template>
-                <el-menu-item index="3-4-1">选项4-1</el-menu-item>
-                </el-submenu>
+                <el-menu-item index="3-1"><router-link to="/shippinghandler">发货处理</router-link></el-menu-item>
+                <el-menu-item index="3-2"><router-link to="/logisticsmanage">物流管理</router-link></el-menu-item>
+                <el-menu-item index="3-3"><router-link to="/ordermodify">订单修改</router-link></el-menu-item>
+                <el-menu-item index="3-4"><router-link to="/returnsmanagement">退货管理</router-link></el-menu-item>
+                <el-menu-item index="3-5"><router-link to="/orderprocessingrecord">订单处理记录</router-link></el-menu-item>
+                <el-menu-item index="3-6"><router-link to="/transactionstatistics">交易统计</router-link></el-menu-item>
             </el-submenu>
             <el-submenu index="4">
                 <template slot="title"><i class="el-icon-setting"></i>订单管理</template>
