@@ -11,7 +11,7 @@ Vue.use(ElementUI);
 import axios from 'axios'
 Vue.prototype.$http=axios
 //统一设置请求前缀
-axios.defaults.baseURL='http://127.0.0.1:3000' 
+axios.defaults.baseURL='http://172.16.7.82:8080' 
 
 /* //请求拦截
 axios.interceptors.request.use(config =>{
