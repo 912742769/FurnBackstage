@@ -1,31 +1,53 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
     <router-view/>
   </div>
 </template>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-#nav {
-  padding: 30px;
+.el-table th{
+  background:#f4f4f4 !important;
 }
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.el-table td{
+  font-size: 12px;
 }
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.clear::before,
+.clear::after{
+    content: '';
+    display: table;
+}
+.clear::after{
+    clear: both;
+}
+.block{
+  margin-top: 20px;
+  text-align: right;
+}
+/* 订单title */
+.oder-title-box{
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f2f0f1;
+  margin-bottom: 20px;
+}
+.oder-title{
+    float: left;
+    color: #f2f0f1;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.oder-title::before {
+    content: url(./assets/icon-book.png);
+    vertical-align: -3px;
+    margin-right: 5px;
+}
+.oder-title-box .el-input {
+  display: inline-block;
+    width: 150px;
+    margin: 0 10px;
 }
 </style>
